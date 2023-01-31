@@ -8,15 +8,11 @@
   },
   "package": {
     "productName": "umarhadi",
-    "version": "0.0.0"
+    "version": "0.2.0"
   },
   "tauri": {
     "allowlist": {
-      "all": false,
-      "shell": {
-        "all": false,
-        "open": true
-      }
+      "all": true
     },
     "bundle": {
       "active": true,
@@ -30,11 +26,9 @@
         "icons/32x32.png",
         "icons/128x128.png",
         "icons/128x128@2x.png",
-        "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
-      "longDescription": "",
+      "identifier": "com.umar.wkwk",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -59,12 +53,18 @@
     },
     "windows": [
       {
+        "userAgent": "chrome",
+        "url": "https://umarhadi.dev",
         "fullscreen": false,
-        "height": 600,
+        "height": 720,
         "resizable": true,
-        "title": "umarhadi",
-        "width": 800
+        "title": "umarhadi.dev",
+        "width": 1280
       }
-    ]
+    ],
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    }
   }
 }
